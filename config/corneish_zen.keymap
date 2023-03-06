@@ -20,62 +20,62 @@
     combos {
         compatible = "zmk,combos";
         combo_esc {
-            timeout-ms = <50>;
+            timeout-ms = <60>;
             key-positions = <13 14>;
             bindings = <&kp ESC>;
         };
         combo_tab {
-            timeout-ms = <50>;
+            timeout-ms = <60>;
             key-positions = <14 15>;
             bindings = <&kp TAB>;
         };
         combo_delete {
-            timeout-ms = <50>;
+            timeout-ms = <60>;
             key-positions = <15 16>;
             bindings = <&kp DELETE>;
         };
         combo_backspace {
-            timeout-ms = <50>;
+            timeout-ms = <60>;
             key-positions = <19 20>;
             bindings = <&kp BSPC>;
         };
         combo_enter {
-            timeout-ms = <50>;
+            timeout-ms = <60>;
             key-positions = <21 22>;
             bindings = <&kp RET>;
         };
         combo_scln {
-            timeout-ms = <50>;
+            timeout-ms = <60>;
             key-positions = <20 21>;
             bindings = <&kp SCLN>;
         };
         combo_lpar {
-            timeout-ms = <50>;
+            timeout-ms = <60>;
             key-positions = <3 4>;
             bindings = <&kp LPAR>;
         };
         combo_rpar {
-            timeout-ms = <50>;
+            timeout-ms = <60>;
             key-positions = <7 8>;
             bindings = <&kp RPAR>;
         };
         combo_lbkt {
-            timeout-ms = <50>;
+            timeout-ms = <60>;
             key-positions = <7 8>;
             bindings = <&kp LBKT>;
         };
         combo_rbkt {
-            timeout-ms = <50>;
+            timeout-ms = <60>;
             key-positions = <7 8>;
             bindings = <&kp RBKT>;
         };
         combo_minus {
-            timeout-ms = <50>;
+            timeout-ms = <60>;
             key-positions = <2 3>;
             bindings = <&kp MINUS>;
         };
         combo_equal {
-            timeout-ms = <50>;
+            timeout-ms = <60>;
             key-positions = <8 9>;
             bindings = <&kp EQUAL>;
         };
@@ -89,7 +89,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <160>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -108,17 +108,17 @@
                         
                         bindings = <
 &trans &kp Q              &kp W              &kp E              &kp R              &kp T              &kp Y              &kp U              &kp I              &kp O              &kp P           &trans    
-&trans &hm LGUI A        &hm LCTRL S        &hm LALT D         &hm LSHFT F         &kp G              &kp H              &hm LSHFT J        &hm LALT K         &hm LCTRL L        &hm LGUI SQT   &trans     
+&trans &hm LGUI A         &hm LCTRL S        &hm LALT D         &hm LSHFT F         &kp G              &kp H              &hm LSHFT J        &hm LALT K         &hm LCTRL L        &hm LGUI SQT   &trans     
 &trans &kp Z              &lt MED X          &kp C              &kp V              &kp B              &kp N              &kp M              &kp COMMA          &lt FUN DOT        &lt SYM SLASH   &trans 
-                                             &trans             &lt  NAV BSPC     &lt  MED TAB      &lt  FUN DEL       &lt  NUM SPC        &trans
+                                             &trans             &lt  NAV BSPC     &lt  MED TAB      &lt  FUN DEL       &lt  NUM SPC        &lt SYM F2
                         >;
                 };
                 num_layer {
                        
                         bindings = <
-&trans &kp LBKT           &kp NUM_7          &kp NUM_8          &kp NUM_9          &kp RBKT           &trans                &trans             &trans             &trans             &trans        &trans 
-&trans &kp SEMI           &kp NUM_4          &kp NUM_5          &kp NUM_6          &kp EQL            &trans                &kp LSHFT          &kp LALT           &kp LCTRL          &kp LGUI      &trans        
-&trans &kp GRAVE          &kp NUM_1          &kp NUM_2          &kp NUM_3          &kp BSLH           &trans                &trans             &trans             &trans             &trans        &trans         
+&trans &kp LPAR           &kp NUM_7          &kp NUM_8          &kp NUM_9          &kp RPAR           &kp LBKT              &kp RBKT           &kp LBRC           &kp RBR            &kp PIPE      &trans 
+&trans &kp SEMI           &kp NUM_4          &kp NUM_5          &kp NUM_6          &kp EQL            &kp BSLH              &kp LSHFT          &kp LALT           &kp LCTRL          &kp LGUI      &trans        
+&trans &kp GRAVE          &kp NUM_1          &kp NUM_2          &kp NUM_3          &kp MINUS          &kp LBKT              &kp RBKT           &trans             &trans             &trans        &trans         
                                             &kp MINUS     &kp NUM_0      &kp DOT               &trans                &trans             &trans  
                         >;
                 };
@@ -135,9 +135,9 @@
                 nav_layer {
                       
                         bindings = <
-&trans &trans             &trans             &trans             &trans             &trans                &kp INS            &kp HOME           &kp UP             &kp END            &kp PG_UP    &trans       
-&trans &kp LGUI           &kp LALT           &kp LCTRL          &kp LSHFT          &trans                &trans             &kp LEFT           &kp DOWN           &kp RIGHT          &kp PG_DN    &trans       
-&trans &trans             &trans             &trans             &trans             &trans                &kp LC(Z)          &kp LC(X)          &kp LC(C)          &kp LC(V)          &kp LC(Y)    &trans            
+&trans &kp ESC            &kp TAB            &kp HOME           &kp END            &kp INS               &kp PG_DOWN        &kp PG_UP          &kp UP             &kp DEL            &kp BSPC     &trans       
+&trans &hm LGUI A         &hm LCTRL S        &hm LALT D         &hm LSHFT F        &trans                &kp PG_UP          &kp LEFT           &kp DOWN           &kp RIGHT          &kp RETURN   &trans       
+&trans &kp LC(Z)          &kp LC(X)          &kp LC(C)          &kp LC(V)          &trans                &kp PG_DOWN        &kp LC(V)          &kp LC(C)          &kp LC(X)          &kp LC(Z)    &trans            
                                       &trans             &trans             &trans                &kp RET            &kp BSPC           &kp DEL
                         >;
                 };        
@@ -153,10 +153,10 @@
                 med_layer {
                         
                         bindings = <
-&trans &trans             &trans             &trans             &trans             &trans                &trans             &trans             &trans             &trans             &trans	      &trans    
-&trans &kp LGUI           &kp LALT           &kp LCTRL          &kp LSHFT          &trans                &bt BT_CLR         &kp C_PREV         &kp C_VOL_DN       &kp C_VOL_UP       &kp C_NEXT   &trans      
+&trans &trans             &trans             &trans             &trans             &trans                &trans             &kp C_PREV         &kp C_NEXT         &kp C_PP           &kp C_STOP   &trans    
+&trans &kp LGUI           &kp LALT           &kp LCTRL          &kp LSHFT          &trans                &bt BT_CLR         &kp C_VOL_DN       &kp C_VOL_UP       &kp C_MUTE         &kp C_NEXT   &trans      
 &trans &trans             &trans             &trans             &trans             &trans                &bt BT_SEL 0       &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_SEL 4 &trans        
-                                      &trans             &trans             &trans                &kp C_STOP         &kp C_PP           &kp C_MUTE                                         
+                                      &trans             &trans             &trans                &trans         &trans           &trans                                         
                         >;
         };
         };
