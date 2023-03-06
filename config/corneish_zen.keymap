@@ -108,9 +108,9 @@
                         
                         bindings = <
 &trans &kp Q              &kp W              &kp E              &kp R              &kp T              &kp Y              &kp U              &kp I              &kp O              &kp P           &trans    
-&trans &hm LGUI A         &hm LCTRL S        &hm LALT D         &hm LSHFT F         &kp G              &kp H              &hm LSHFT J        &hm LALT K         &hm LCTRL L        &hm LGUI SQT   &trans     
+&trans &hm LGUI A         &hm LCTRL S        &hm LALT D         &hm LSHFT F        &kp G              &kp H              &hm LSHFT J        &hm LALT K         &hm LCTRL L        &hm LGUI SQT    &trans     
 &trans &kp Z              &lt MED X          &kp C              &kp V              &kp B              &kp N              &kp M              &kp COMMA          &lt FUN DOT        &lt SYM SLASH   &trans 
-                                             &trans             &lt  NAV BSPC     &lt  MED TAB      &lt  FUN DEL       &lt  NUM SPC        &lt SYM F2
+                                             &trans             &lt  NAV BSPC     &lt  MED TAB      &lt  FUN DEL       &lt  NUM SPC        &trans
                         >;
                 };
                 num_layer {
