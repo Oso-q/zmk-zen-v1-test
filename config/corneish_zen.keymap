@@ -117,7 +117,7 @@
                        
                         bindings = <
 &trans &kp LPAR           &kp NUM_7          &kp NUM_8          &kp NUM_9          &kp RPAR           &kp LBKT              &kp RBKT           &kp LBRC           &kp RBRC           &kp PIPE      &trans 
-&trans &kp SEMI           &kp NUM_4          &kp NUM_5          &kp NUM_6          &kp EQUAL          &kp BSLH              &kp LSHFT          &kp LALT           &kp LCTRL          &kp LGUI      &trans        
+&trans &kp SEMI           &kp NUM_4          &kp NUM_5          &kp NUM_6          &kp EQUAL          &kp BACKSLASH         &kp LSHFT          &kp LALT           &kp LCTRL          &kp LGUI      &trans        
 &trans &kp GRAVE          &kp NUM_1          &kp NUM_2          &kp NUM_3          &kp MINUS          &kp LBKT              &kp RBKT           &trans             &trans             &trans        &trans         
                                             &kp MINUS     &kp NUM_0      &kp DOT               &trans                &trans             &trans  
                         >;
